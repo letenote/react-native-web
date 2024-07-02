@@ -1,10 +1,18 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, Text, View, Button } from "react-native";
 
 export default function App() {
+  const [btntext, setBtntext] = useState("Click me");
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app X!</Text>
+      <Text testID={"welcomeText"} nativeID={"welcomeText"}>
+        Hello World!
+      </Text>
+      <Button
+        testID={"welcomeButton"}
+        onPress={() => setBtntext("Button clicked!")}
+        title={btntext}
+      />
     </View>
   );
 }

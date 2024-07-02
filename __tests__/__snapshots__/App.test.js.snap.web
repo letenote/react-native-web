@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> create snapshoot 1`] = `
+<div
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-14lw9ot r-flex-13awgt0 r-justifyContent-1777fci"
+>
+  <div
+    className="css-text-901oao"
+    data-testid="welcomeText"
+    dir="auto"
+    id="welcomeText"
+    onClick={[Function]}
+  >
+    Hello World!
+  </div>
+  <div
+    className="css-cursor-18t94o4 css-view-1dbjc4n r-backgroundColor-14sbq61 r-borderRadius-1jkafct r-cursor-1loqt21 r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr"
+    data-focusable={true}
+    data-testid="welcomeButton"
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    style={
+      Object {
+        "WebkitTransitionDuration": "0s",
+        "transitionDuration": "0s",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      className="css-text-901oao r-color-jwli3a r-fontWeight-majxgm r-padding-edyy15 r-textAlign-q4m81j r-textTransform-tsynxw"
+      dir="auto"
+      onClick={[Function]}
+    >
+      Click me
+    </div>
+  </div>
+</div>
+`;
