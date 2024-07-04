@@ -6,9 +6,27 @@ exports[`<App /> create snapshoot 1`] = `
 >
   <div
     className="css-text-901oao"
-    data-testid="welcomeText"
+    data-testid="welcomeText:0"
     dir="auto"
-    id="welcomeText"
+    id="welcomeText:0"
+    onClick={[Function]}
+  >
+    Hello World!
+  </div>
+  <div
+    className="css-text-901oao"
+    data-testid="welcomeBro:1"
+    dir="auto"
+    id="welcomeText:1"
+    onClick={[Function]}
+  >
+    Hello World!
+  </div>
+  <div
+    className="css-text-901oao"
+    data-testid="welcomeText:1"
+    dir="auto"
+    id="welcomeText:2"
     onClick={[Function]}
   >
     Hello World!

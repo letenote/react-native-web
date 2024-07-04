@@ -5,7 +5,13 @@ export default function App() {
   const [btntext, setBtntext] = useState("Click me");
   return (
     <View style={styles.container}>
-      <Text testID={"welcomeText"} nativeID={"welcomeText"}>
+      <Text testID={"welcomeText:0"} nativeID={"welcomeText:0"}>
+        Hello World!
+      </Text>
+      <Text testID={"welcomeBro:1"} nativeID={"welcomeText:1"}>
+        Hello World!
+      </Text>
+      <Text testID={"welcomeText:1"} nativeID={"welcomeText:2"}>
         Hello World!
       </Text>
       <Button
