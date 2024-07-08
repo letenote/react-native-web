@@ -39,13 +39,14 @@ describe("<PromiseChaining/>", () => {
     expect(textElmByTestID.children).toEqual("loading");
   });
 
-  it("calls all load function if hidden false", () => {
+  it("calls all load function if hidden false", async () => {
+    jest.useRealTimers();
     const render = create(<PromiseChaining hidden={false} />);
-    act(() => jest.runAllTimers());
-    expect(componentDidMountMock).toHaveBeenCalled();
-    expect(loadOneMock).toHaveBeenCalled();
-    expect(loadTwoMock).toHaveBeenCalled();
-    expect(loadThreeMock).toHaveBeenCalled();
+    // act(() => jest.runAllTimers());
+    expect(await componentDidMountMock).toHaveBeenCalled();
+    expect(await loadOneMock).toHaveBeenCalled();
+    expect(await loadTwoMock).toHaveBeenCalled();
+    expect(await loadThreeMock).toHaveBeenCalled();
 
     const componentRoot = render.root;
     const textElmByTestID = componentRoot.findByProps({
@@ -56,16 +57,17 @@ describe("<PromiseChaining/>", () => {
     expect(textElmByTestID.children).toEqual("loadedx");
   });
 
-  it("change loading text in loadTwo method", () => {
+  it("change loading text in loadTwo method", async () => {
+    jest.useRealTimers();
     loadTwoMock = jest
       .spyOn(PromiseChaining.prototype, "loadTwo")
       .mockImplementation(() => Promise.resolve("xxx"));
     const render = create(<PromiseChaining hidden={false} />);
-    act(() => jest.runAllTimers());
-    expect(componentDidMountMock).toHaveBeenCalled();
-    expect(loadOneMock).toHaveBeenCalled();
-    expect(loadTwoMock).toHaveBeenCalled();
-    expect(loadThreeMock).toHaveBeenCalled();
+    // act(() => jest.runAllTimers());
+    expect(await componentDidMountMock).toHaveBeenCalled();
+    expect(await loadOneMock).toHaveBeenCalled();
+    expect(await loadTwoMock).toHaveBeenCalled();
+    expect(await loadThreeMock).toHaveBeenCalled();
 
     const componentRoot = render.root;
     const textElmByTestID = componentRoot.findByProps({
@@ -80,16 +82,17 @@ describe("<PromiseChaining/>", () => {
     expect(PromiseChaining.defaultProps.hidden).toBeDefined();
   });
 
-  test("test default value in params loadThree method", () => {
+  test("test default value in params loadThree method", async () => {
+    jest.useRealTimers();
     loadTwoMock = jest
       .spyOn(PromiseChaining.prototype, "loadTwo")
       .mockImplementation(() => Promise.resolve(undefined));
     const render = create(<PromiseChaining hidden={false} />);
-    act(() => jest.runAllTimers());
-    expect(componentDidMountMock).toHaveBeenCalled();
-    expect(loadOneMock).toHaveBeenCalled();
-    expect(loadTwoMock).toHaveBeenCalled();
-    expect(loadThreeMock).toHaveBeenCalled();
+    // act(() => jest.runAllTimers());
+    expect(await componentDidMountMock).toHaveBeenCalled();
+    expect(await loadOneMock).toHaveBeenCalled();
+    expect(await loadTwoMock).toHaveBeenCalled();
+    expect(await loadThreeMock).toHaveBeenCalled();
     const componentRoot = render.toTree();
 
     // console.log("textElmByTestID x", componentRoot.instance);
