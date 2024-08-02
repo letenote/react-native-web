@@ -2,7 +2,30 @@
 
 exports[`<App /> create snapshoot 1`] = `
 <div
-  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-14lw9ot r-flex-13awgt0 r-justifyContent-1777fci"
+  className="css-view-1dbjc4n"
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxPack": "center",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "WebkitJustifyContent": "center",
+      "alignItems": "center",
+      "backgroundColor": "rgba(255,255,255,1.00)",
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "justifyContent": "center",
+      "msFlexAlign": "center",
+      "msFlexNegative": 1,
+      "msFlexPack": "center",
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
 >
   <div
     className="css-text-901oao"
@@ -32,7 +55,7 @@ exports[`<App /> create snapshoot 1`] = `
     Hello World!
   </div>
   <div
-    className="css-cursor-18t94o4 css-view-1dbjc4n r-backgroundColor-14sbq61 r-borderRadius-1jkafct r-cursor-1loqt21 r-touchAction-1otgn73 r-transitionProperty-1i6wzkk r-userSelect-lrvibr"
+    className="css-cursor-18t94o4 css-view-1dbjc4n"
     data-focusable={true}
     data-testid="welcomeButton"
     onClick={[Function]}
@@ -41,16 +64,43 @@ exports[`<App /> create snapshoot 1`] = `
     role="button"
     style={
       Object {
+        "MozTransitionProperty": "opacity",
+        "MozUserSelect": "none",
         "WebkitTransitionDuration": "0s",
+        "WebkitTransitionProperty": "opacity",
+        "WebkitUserSelect": "none",
+        "backgroundColor": "rgba(33,150,243,1.00)",
+        "borderBottomLeftRadius": "2px",
+        "borderBottomRightRadius": "2px",
+        "borderTopLeftRadius": "2px",
+        "borderTopRightRadius": "2px",
+        "cursor": "pointer",
+        "msTouchAction": "manipulation",
+        "msUserSelect": "none",
+        "touchAction": "manipulation",
         "transitionDuration": "0s",
+        "transitionProperty": "opacity",
+        "userSelect": "none",
       }
     }
     tabIndex="0"
   >
     <div
-      className="css-text-901oao r-color-jwli3a r-fontWeight-majxgm r-padding-edyy15 r-textAlign-q4m81j r-textTransform-tsynxw"
+      className="css-text-901oao"
       dir="auto"
       onClick={[Function]}
+      style={
+        Object {
+          "color": "rgba(255,255,255,1.00)",
+          "fontWeight": "500",
+          "paddingBottom": "8px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px",
+          "paddingTop": "8px",
+          "textAlign": "center",
+          "textTransform": "uppercase",
+        }
+      }
     >
       Click me
     </div>

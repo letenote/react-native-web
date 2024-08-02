@@ -10,7 +10,7 @@ const baseConfig = {
   verbose: true,
   moduleFileExtensions: [...defaults.moduleFileExtensions, "js", "jsx"],
   verbose: true,
-  preset: "jest-expo",
+  // preset: "jest-expo",
   transform: {
     "\\.[jt]sx?$": ["babel-jest", { configFile: "./babel-jest.config.js" }],
   },
@@ -45,11 +45,17 @@ const baseConfig = {
     "<rootDir>/build/",
     "<rootDir>/dist/",
     "<rootDir>/node_modules/",
+    "<rootDir>/redux/index.js",
+    "<rootDir>/redux/reducers",
+    "<rootDir>/redux/middleware",
   ],
   coveragePathIgnorePatterns: [
     "<rootDir>/build/",
     "<rootDir>/dist/",
     "<rootDir>/node_modules/",
+    "<rootDir>/redux/index.js",
+    "<rootDir>/redux/reducers",
+    "<rootDir>/redux/middleware",
   ],
 };
 
@@ -57,7 +63,7 @@ module.exports = {
   projects: [
     {
       displayName: "Web",
-      preset: "react-native-web",
+      preset: "jest-expo/web",
       // This is brittle, we did this so snapshot naming/modifying is consistent
       snapshotResolver: "jest-expo/src/snapshot/resolver.web.js",
       ...baseConfig,
