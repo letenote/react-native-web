@@ -48,6 +48,7 @@ const baseConfig = {
     "<rootDir>/redux/index.js",
     "<rootDir>/redux/reducers",
     "<rootDir>/redux/middleware",
+    "<rootDir>/sw",
   ],
   coveragePathIgnorePatterns: [
     "<rootDir>/build/",
@@ -56,6 +57,7 @@ const baseConfig = {
     "<rootDir>/redux/index.js",
     "<rootDir>/redux/reducers",
     "<rootDir>/redux/middleware",
+    "<rootDir>/sw",
   ],
 };
 

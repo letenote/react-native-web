@@ -2,13 +2,13 @@
 
 exports[`<AsyncTaskComponent /> create snapshoot 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="css-view-175oi2r"
+  dir={null}
 >
   <div
-    className="css-text-901oao"
+    className="css-text-146c3p1"
     data-testid="myText"
     dir="auto"
-    onClick={[Function]}
   >
     default
   </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 import configureStore from "./redux";
 import { Provider } from "react-redux";
+import * as serviceWorkerRegistration from "./sw/serviceWorkerRegistration";
 
 const store = configureStore();
 export default function App() {
@@ -35,4 +36,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+});
+
+/* istanbul ignore next */
+serviceWorkerRegistration.register({
+  onUpdate: (registration) => {},
+  onSuccess: (registration) => {},
 });
